@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="claro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arthur Henrique | dev_Portifólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <span class="estrela e1" aria-hidden="true">✦</span>
+  <span class="estrela e2" aria-hidden="true">✦</span>
+  <span class="estrela e3" aria-hidden="true">✦</span>
+
+  <header class="topo">
+    <a href="#inicio" class="logo"><span class="selo">HTML</span> dev_Portifólio</a>
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#sobre">Sobre mim</a><i>//</i>
+      <a href="#skills">Skills</a><i>//</i>
+      <a href="#projetos">Projetos</a><i>//</i>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button id="btnTema" class="btn-tema" aria-label="Alternar modo claro e escuro">🌙</button>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h1>Hello World<br><span id="digitado" data-texto="I'm Arthur Henrique"></span><span class="cursor-texto">|</span></h1>
+      <p class="hero-texto">Olá! Meu nome é Arthur Henrique.<br>Sou aluno do Cotemig e tenho interesse em desenvolvimento web, programação e criação de projetos digitais.</p>
+      <a href="#contato" class="botao">Fale comigo</a>
+    </section>
+
+    <section id="sobre" class="secao">
+      <h2>Sobre mim</h2>
+      <div class="grade tres">
+        <article class="caixa">
+          <h3>Quem sou eu</h3>
+          <p>Sou o Arthur Henrique, aluno do Cotemig, apaixonado por tecnologia e por aprender coisas novas todos os dias.</p>
+        </article>
+        <article class="caixa">
+          <h3>Meus estudos</h3>
+          <p>No Cotemig estudo programação e desenvolvimento web, praticando HTML, CSS e JavaScript em projetos de sala e pessoais.</p>
+        </article>
+        <article class="caixa">
+          <h3>Meus objetivos</h3>
+          <p>Quero crescer como desenvolvedor, construir sites bonitos e funcionais e, no futuro, trabalhar na área de tecnologia.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="secao">
+      <h2>Skills</h2>
+      <div class="grade tres">
+        <article class="caixa"><h3>HTML</h3><div class="barra"><div class="nivel" data-nivel="85"></div></div><span class="pct">85%</span></article>
+        <article class="caixa"><h3>CSS</h3><div class="barra"><div class="nivel" data-nivel="75"></div></div><span class="pct">75%</span></article>
+        <article class="caixa"><h3>JavaScript</h3><div class="barra"><div class="nivel" data-nivel="20"></div></div><span class="pct">20%</span></article>
+        <article class="caixa"><h3>MySQL</h3><div class="barra"><div class="nivel" data-nivel="60"></div></div><span class="pct">60%</span></article>
+        <article class="caixa"><h3>C#</h3><div class="barra"><div class="nivel" data-nivel="50"></div></div><span class="pct">50%</span></article>
+        <article class="caixa"><h3>Cisco Packet Tracer</h3><div class="barra"><div class="nivel" data-nivel="30"></div></div><span class="pct">30%</span></article>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao">
+      <h2>Projetos</h2>
+      <div class="grade tres">
+        <article class="caixa"><h3>Este portfólio</h3><p>Site feito com HTML, CSS Grid e JavaScript, com modo escuro e formulário com máscara.</p></article>
+        <article class="caixa"><h3>Projetos do Cotemig</h3><p>Trabalhos desenvolvidos durante as aulas de programação e desenvolvimento web.</p></article>
+        <article class="caixa"><h3>Próximo projeto</h3><p>Estou sempre começando algo novo. Em breve, mais novidades por aqui!</p></article>
+        <article class="caixa"><h3>Rooftop (Projeto Cotemig)</h3><p><a href="https://github.com/arthurpassospereira14-boop/Rooftop-Restaurante-" >Clique aqui para ver meu projeto</a></p></article>
+        <article class="caixa"><h3>Tuti Burguer (Projeto Cotemig)</h3><p><a href="https://github.com/arthurpassospereira14-boop/Tuti-Burguer" >Veja esse projeto</a></p></article>
+        <article class="caixa"><h3>Meu Github</h3><p><a href="https://github.com/arthurpassospereira14-boop" >Veja meu github</a></p></article>
+      </div>
+    </section>
+wa
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+      <form id="formulario" class="caixa form" novalidate>
+        <label>Nome
+          <input type="text" id="nome" placeholder="Seu nome" required>
+        </label>
+        <label>Telefone
+          <input type="tel" id="telefone" placeholder="(31) 99999-9999" maxlength="15" required>
+        </label>
+        <label>E-mail
+          <input type="email" id="email" placeholder="voce@email.com" required>
+        </label>
+        <label class="largo">Mensagem
+          <textarea id="mensagem" rows="4" maxlength="200" placeholder="Escreva sua mensagem" required></textarea>
+          <small id="contador">0/200</small>
+        </label>
+        <button type="submit" class="botao">Enviar mensagem</button>
+        <p id="retorno" class="retorno" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">© 2026 Arthur Henrique · Aluno do Cotemig</footer>
+  <script src="script.js"></script>
+</body>
+</html>
